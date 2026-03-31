@@ -47,6 +47,8 @@ def download_audio(url: str, temp_dir: Path) -> Path:
             "yt-dlp",
             "-x",  # Extract audio
             "--audio-format", "mp3",
+            "--no-playlist",  # Download single video only
+            "--progress",  # Show progress bar
             "-o", output_template,
             url
         ], check=True, capture_output=True)
@@ -92,6 +94,7 @@ def isolate_guitar(input_file: Path, temp_dir: Path) -> Path:
             "--repo", str(Path.home() / ".cache" / "demucs"),
             "-n", "htdemucs_6s",
             "-d", "cpu",
+            "--verbose",
             str(input_file)
         ], check=True, capture_output=True, text=True)
         
