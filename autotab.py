@@ -6,9 +6,9 @@ Pipeline: Download → Isolate (Demucs) → Transcribe (Basic Pitch) → Optimiz
 
 import argparse
 import os
+import shutil
 import subprocess
 import sys
-import tempfile
 from pathlib import Path
 from shutil import copy2
 
@@ -19,6 +19,8 @@ def setup_directories():
     output_dir = Path("output")
     temp_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
+    # Ensure Demucs cache directory exists
+    os.makedirs(os.path.expanduser('~/.cache/demucs'), exist_ok=True)
     return temp_dir, output_dir
 
 
@@ -177,6 +179,26 @@ def convert_to_tab(midi_file: Path, output_dir: Path, tuning: str) -> Path:
         sys.exit(1)
 
 
+def cleanup_temp_files(temp_dir: Path):
+    """Remove large intermediate files from temp directory."""
+    print("Cleaning up temporary files...")
+    # Delete .wav and .mid files from temp
+    for ext in ["*.wav", "*.mid"]:
+        for file in temp_dir.glob(ext):
+            try:
+                file.unlink()
+            except Exception as e:
+                print(f"Warning: Could not delete {file}: {e}")
+    
+    # Also clean up separated directory if it exists (from Demucs)
+    separated_dir = Path("separated")
+    if separated_dir.exists():
+        try:
+            shutil.rmtree(separated_dir)
+        except Exception as e:
+            print(f"Warning: Could not delete separated directory: {e}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="AutoTab: Convert MP3 to guitar tab using AI"
@@ -227,6 +249,9 @@ def main():
         # Step 4: Convert to tab
         tab_file = convert_to_tab(midi_file, output_dir, args.tuning)
         print(f"  Tab: {tab_file}")
+        
+        # Cleanup intermediate files
+        cleanup_temp_files(temp_dir)
         
         print("=" * 50)
         print(f"✓ Tab saved to: {tab_file}")
