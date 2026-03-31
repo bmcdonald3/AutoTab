@@ -19,8 +19,11 @@ def setup_directories():
     output_dir = Path("output")
     temp_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
-    # Ensure Demucs cache directory exists
-    os.makedirs(os.path.expanduser('~/.cache/demucs'), exist_ok=True)
+    # Ensure Demucs cache directory exists with proper permissions
+    cache_dir = Path.home() / ".cache" / "demucs"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    # Set permissions to 0o755 (read/write/execute for owner, read/execute for others)
+    os.chmod(cache_dir, 0o755)
     return temp_dir, output_dir
 
 
@@ -37,6 +40,34 @@ def check_dependencies():
         print(f"Error: Missing dependencies: {', '.join(missing)}")
         print("Install with: pip install -r requirements.txt")
         sys.exit(1)
+
+
+def validate_demucs_model():
+    """Check if the htdemucs model is available."""
+    print("Validating Demucs model...")
+    try:
+        # Use Python to check if model can be loaded
+        check_script = """
+import demucs.pretrained
+try:
+    demucs.pretrained.get_model('htdemucs')
+    print("Model available")
+except Exception as e:
+    print(f"Error: {e}")
+    exit(1)
+"""
+        result = subprocess.run(
+            [sys.executable, "-c", check_script],
+            capture_output=True,
+            text=True
+        )
+        if result.returncode != 0:
+            print(f"Demucs model validation failed: {result.stderr}")
+            print("The model will be downloaded automatically on first use.")
+        else:
+            print("  ✓ Demucs model validated")
+    except Exception as e:
+        print(f"Warning: Could not validate model: {e}")
 
 
 def download_audio(url: str, temp_dir: Path) -> Path:
@@ -86,7 +117,7 @@ def get_input_file(args) -> Path:
 
 
 def isolate_guitar(input_file: Path, temp_dir: Path) -> Path:
-    """Run Demucs v4 to isolate guitar stem."""
+    """Run Demucs v4 to isolate guitar stem using htdemucs (4-stem) with fallback to 'other'."""
     print(f"[2/4] Isolating guitar stem with Demucs...")
     
     try:
@@ -94,29 +125,47 @@ def isolate_guitar(input_file: Path, temp_dir: Path) -> Path:
         result = subprocess.run([
             "demucs",
             "--repo", str(Path.home() / ".cache" / "demucs"),
-            "-n", "htdemucs_6s",
+            "-n", "htdemucs",  # Use 4-stem model (most stable)
             "-d", "cpu",
             "--verbose",
             str(input_file)
         ], check=True, capture_output=True, text=True)
         
         # Find the guitar stem
-        # Demucs output structure: separated/htdemucs_6s/<track_name>/guitar.wav
+        # For htdemucs (4-stem), guitar is typically in 'other' stem
         track_name = input_file.stem
-        guitar_stem = Path("separated") / "htdemucs_6s" / track_name / "guitar.wav"
+        separated_dir = Path("separated") / "htdemucs" / track_name
+        
+        # Check for guitar.wav first (if using 6-stem model)
+        guitar_stem = separated_dir / "guitar.wav"
+        if not guitar_stem.exists():
+            # Fallback to 'other' stem for 4-stem model
+            guitar_stem = separated_dir / "other.wav"
         
         if not guitar_stem.exists():
-            # Try alternative naming
-            separated_dir = Path("separated") / "htdemucs_6s"
+            # Try alternative: list all stems and pick the most likely
             if separated_dir.exists():
-                for subdir in separated_dir.iterdir():
-                    potential = subdir / "guitar.wav"
-                    if potential.exists():
-                        guitar_stem = potential
-                        break
+                stems = list(separated_dir.glob("*.wav"))
+                if stems:
+                    # Prefer 'guitar' if available, otherwise 'other'
+                    for stem in stems:
+                        if "guitar" in stem.name.lower():
+                            guitar_stem = stem
+                            break
+                    if not guitar_stem.exists():
+                        # Use 'other' as last resort
+                        for stem in stems:
+                            if "other" in stem.name.lower():
+                                guitar_stem = stem
+                                break
+                    # If still not found, use first available
+                    if not guitar_stem.exists() and stems:
+                        guitar_stem = stems[0]
         
         if not guitar_stem.exists():
             raise FileNotFoundError("Guitar stem not found after Demucs separation")
+        
+        print(f"  Using stem: {guitar_stem.name}")
         
         # Copy to temp for next steps
         dest = temp_dir / "guitar_stem.wav"
@@ -232,6 +281,9 @@ def main():
     
     # Setup directories
     temp_dir, output_dir = setup_directories()
+    
+    # Validate Demucs model
+    validate_demucs_model()
     
     try:
         # Step 1: Get input file
