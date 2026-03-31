@@ -19,8 +19,11 @@ AI-powered guitar tab transcription from MP3 files. Automatically converts audio
 ### Setup
 
 ```bash
+# Upgrade pip first (important for Python 3.12)
+python3 -m pip install --upgrade pip
+
 # Create virtual environment (recommended)
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
@@ -78,6 +81,13 @@ E|------------|
 - **yt-dlp** (>=2023.7.6) - Audio downloading
 
 ## Troubleshooting
+
+### Python 3.12 / numpy installation errors
+If you're using Python 3.12 and encounter numpy build errors, ensure you have the latest pip:
+```bash
+python3 -m pip install --upgrade pip
+```
+The requirements.txt explicitly includes `numpy>=1.24.0` which has pre-built wheels for Python 3.12.
 
 ### Demucs model not found
 Demucs will auto-download the htdemucs_6s model on first run. If it fails:
