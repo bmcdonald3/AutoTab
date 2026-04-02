@@ -1,0 +1,4571 @@
+Guitar Tab (AutoTab)
+Generated from MIDI
+========================================
+
+Measure 1:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 2:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 3:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 4:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 5:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 6:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 7:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 8:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 10:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 12:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 13:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 14:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 15:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 17:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 18:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 19:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 20:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 21:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 22:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 23:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 24:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 25:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 26:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |  -  -  -
+B |  -  -  -
+E |22-  -  -
+
+Measure 27:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 28:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 29:
+E |  -  -
+A |  -  -
+D |  -14-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 31:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 32:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 33:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 34:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 36:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 37:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 38:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 39:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 40:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -14-  -
+G |  -  -  -  -
+B |  -13-  -  -
+E |12-  -  -  -
+
+Measure 42:
+E |  -  -  -  - 8-
+A |  -  -  -10-  -
+D |  -  -12-  -  -
+G |  -  -  -  -  -
+B |  -15-  -  -  -
+E |12-  -  -  -  -
+
+Measure 43:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 44:
+E |  -  -  -
+A |  -  -17-
+D |  -14-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 45:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 46:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 47:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 48:
+E |  -  - 8-
+A |  -10-  -
+D |  -  -  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 49:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 50:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 51:
+E |  -  -  -
+A |  -  -12-
+D |  -  -  -
+G |  -14-  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 52:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 53:
+E |  -  - 8-
+A |  -12-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 54:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 55:
+E |  - 5-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 56:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 57:
+E |  -  - 8-
+A |  -15-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 58:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 59:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 60:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 61:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 62:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 63:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 64:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 65:
+E |  -  -
+A |  -  -
+D |  -14-
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 66:
+E |  -  -12-
+A |  -  -  -
+D |  -14-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 67:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 68:
+E |  -  -12-  -
+A |  -  -  - 3-
+D |  -14-  -  -
+G |12-  -  -  -
+B |  -  -  -  -
+E |  -  -  -  -
+
+Measure 70:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 71:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 72:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 73:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 74:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 75:
+E |  -
+A |  -
+D |13-
+G |  -
+B |  -
+E |  -
+
+Measure 76:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 77:
+E |  -  -
+A |  -  -
+D |  -14-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 78:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 79:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 80:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 81:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 82:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 83:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 84:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 85:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 86:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 88:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 89:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 90:
+E |  -  -
+A |  -  -
+D |  -12-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 92:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 93:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 95:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 96:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 97:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 98:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 100:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 101:
+E |  -  - 8-
+A |  -12-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 102:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 103:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 104:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 105:
+E |  -  -
+A |  -12-
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 106:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 107:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 108:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 109:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 110:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 111:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 112:
+E |  -  - 8-
+A |  -12-  -
+D |  -  -  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 113:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 115:
+E |  -  - 8-
+A |  -12-  -
+D |  -  -  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 116:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 117:
+E |  -  - 3-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 118:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 119:
+E |  -  -
+A |  -  -
+D |  -12-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 121:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 122:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 123:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 125:
+E |  -  - 8-
+A |  -  -  -
+D |  -10-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 126:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 127:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 128:
+E |  -  - 8-
+A |  -10-  -
+D |10-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 129:
+E |  -  -  - 8-
+A |  -  -15-  -
+D |  -12-  -  -
+G |  -  -  -  -
+B |13-  -  -  -
+E |  -  -  -  -
+
+Measure 130:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 131:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 132:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 133:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 134:
+E |  -  -
+A |  -12-
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 135:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 137:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 138:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 140:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 141:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 142:
+E |  -  - 8-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 143:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 144:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 145:
+E |  -  -
+A |  -10-
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 146:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 148:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 149:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 150:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 151:
+E |  -  -  -  - 8-
+A |  -  -  -10-  -
+D |  -  -12-  -  -
+G |  -  -  -  -  -
+B |  -13-  -  -  -
+E |10-  -  -  -  -
+
+Measure 152:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 153:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 154:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 155:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 156:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 157:
+E |  -  - 8-
+A |  -  -  -
+D |  -10-  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 158:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 159:
+E |  -  - 8-
+A |  -10-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 160:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 161:
+E |  -  - 8-
+A |  -10-  -
+D |  -  -  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 162:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 163:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 164:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 165:
+E |  -  - 3-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 166:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 167:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 168:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 169:
+E |  -  -
+A |  -17-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 170:
+E |  -  -
+A |  -10-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 171:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 172:
+E |  - 5-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 173:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 174:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 175:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 176:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 178:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 179:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 180:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 181:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 182:
+E |  -  - 8-
+A |  -10-  -
+D |  -  -  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 183:
+E |  - 8-
+A |  -  -
+D |11-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 184:
+E |  -  -
+A |  -  -
+D |  -12-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 185:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 186:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 187:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 188:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 189:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 191:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 192:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 193:
+E |  -  -  - 8-
+A |  -  -10-  -
+D |  -  -  -  -
+G |  -12-  -  -
+B |13-  -  -  -
+E |  -  -  -  -
+
+Measure 195:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 196:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 197:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 198:
+E |  - 3-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 199:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 200:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 201:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -14-  -
+G |  -12-  -  -
+B |13-  -  -  -
+E |  -  -  -  -
+
+Measure 202:
+E |  -  - 8-
+A |  -12-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 203:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 204:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 205:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 206:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 207:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 208:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 209:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 210:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 211:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 212:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 213:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 214:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 215:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 216:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 217:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 218:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 219:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 220:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 221:
+E |  -  -
+A |  -  -
+D |  -12-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 222:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 223:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 224:
+E |  -  -
+A |  -  -
+D |  -14-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 225:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 226:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 227:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 228:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 229:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 231:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 232:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 233:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 234:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 235:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |12-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 236:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 237:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 238:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 239:
+E |  -  -
+A |  -10-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 240:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 241:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 242:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 243:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 244:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 245:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 246:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 247:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 248:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 249:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 250:
+E |  -  -  - 8-
+A |  -  -12-  -
+D |  -14-  -  -
+G |  -  -  -  -
+B |13-  -  -  -
+E |  -  -  -  -
+
+Measure 252:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 253:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 254:
+E |  -  -
+A |  -  -
+D |  -12-
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 255:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 256:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 257:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -12-
+B |13-  -
+E |  -  -
+
+Measure 258:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 259:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 260:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 261:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 262:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 263:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 264:
+E |  -  -  -
+A |  -  -  -
+D |  -  -12-
+G |14-  -  -
+B |  - 8-  -
+E |  -  -  -
+
+Measure 265:
+E |  -  -
+A |  -  -
+D |  -14-
+G |13-  -
+B |  -  -
+E |  -  -
+
+Measure 266:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 267:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 268:
+E |  -  -
+A |  -  -
+D |  -14-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 269:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 270:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 271:
+E |  -  -
+A |  -  -
+D |  -14-
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 273:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 274:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 275:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 276:
+E |  -  - 8-
+A |  -17-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 277:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 278:
+E |  -  -
+A |  -15-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 279:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 280:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 281:
+E |  -  - 8-
+A |  -17-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 282:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 283:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 284:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 285:
+E |  -  - 8-
+A |  -15-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 286:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 287:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 288:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 289:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 290:
+E |  -  -  -
+A |  -  -12-
+D |  -14-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 291:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 292:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 293:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 294:
+E |  -  -17-
+A |  -15-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 295:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 296:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 298:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 299:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 300:
+E |  -  - 3-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 301:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 302:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 303:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 304:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 305:
+E |  -  -
+A |  -10-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 306:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 307:
+E |  -  -15-
+A |  -17-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 308:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 309:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |22-
+
+Measure 310:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 312:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 313:
+E |  -  - 8-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 315:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 316:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 317:
+E |  -  -
+A |  -12-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 318:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 319:
+E |  -  -  -
+A |  -  -12-
+D |  -14-  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 320:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 321:
+E |  -  - 8-
+A |  -12-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 322:
+E |  - 8-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 323:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 324:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 325:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 326:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 327:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 328:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 329:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 330:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 331:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |15-
+
+Measure 332:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 333:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |15-
+
+Measure 334:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 335:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 337:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 338:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 339:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 340:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 341:
+E |  -
+A |12-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 342:
+E |  - 5-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 343:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 344:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 345:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 346:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 347:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 348:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 349:
+E |  -  -  - 8-
+A |  -  -10-  -
+D |  -14-  -  -
+G |  -  -  -  -
+B |  -  -  -  -
+E |12-  -  -  -
+
+Measure 351:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 352:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 353:
+E |  -  - 8-
+A |  -10-  -
+D |  -  -  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 354:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 355:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 356:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 357:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 359:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 360:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 361:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 362:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 363:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 364:
+E |  -  - 3-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 365:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 366:
+E |  -  -  -15-
+A |  -  -15-  -
+D |  -14-  -  -
+G |  -  -  -  -
+B |13-  -  -  -
+E |  -  -  -  -
+
+Measure 367:
+E |  -  -
+A |  -12-
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 368:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 369:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 370:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 371:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 373:
+E |  -  - 8-
+A |  -12-  -
+D |  -  -  -
+G |  -  -  -
+B |13-  -  -
+E |  -  -  -
+
+Measure 374:
+E |  -  - 8-
+A |  -10-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 375:
+E |  - 8-
+A |  -  -
+D |13-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 376:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 377:
+E |  -  -
+A |  -10-
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 378:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 379:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 380:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 381:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 382:
+E |  -  -
+A |  -  -
+D |  -12-
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 383:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 384:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 385:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 386:
+E |  - 5-
+A |12-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 387:
+E |  -  -
+A |  -12-
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 388:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 390:
+E | 5-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 391:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 392:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 393:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 394:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 395:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 396:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 397:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -12-
+B |12-  -
+E |  -  -
+
+Measure 398:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 399:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 400:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 401:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 402:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -  -  -
+B |  -13-  -
+E |10-  -  -
+
+Measure 403:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |10-  -
+
+Measure 404:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |14-  -  -
+B |  - 8-  -
+E |  -  -  -
+
+Measure 405:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 406:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 407:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 408:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 409:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 410:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 411:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 412:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 413:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 414:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 415:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 416:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 417:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 418:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 419:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 420:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 421:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 422:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 423:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |  -  -  -
+B |12-  -  -
+E |  -  -  -
+
+Measure 424:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 425:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 426:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 427:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |17-
+
+Measure 428:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 429:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 430:
+E |  -  - 8-
+A |  -17-  -
+D |14-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 431:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 432:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 433:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |  -  -  -
+B |12-  -  -
+E |  -  -  -
+
+Measure 434:
+E |  -  - 8-
+A |  -  -  -
+D |  -14-  -
+G |  -  -  -
+B |  -  -  -
+E |12-  -  -
+
+Measure 435:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 436:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -12-
+B |  -  -
+E |12-  -
+
+Measure 437:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 438:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 439:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |15-
+
+Measure 440:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 441:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |15-
+
+Measure 442:
+E |  -  -
+A |  -  -
+D |  -  -
+G |14-  -
+B |  - 8-
+E |  -  -
+
+Measure 443:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 444:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 445:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 446:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 447:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 448:
+E |  -  - 8-
+A |  -  -  -
+D |  -10-  -
+G |14-  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 449:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 450:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 451:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 452:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |  -  -  -
+E |22-  -  -
+
+Measure 453:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 454:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 455:
+E |  -  -
+A |  -  -
+D |  -10-
+G |  -  -
+B |  -  -
+E |10-  -
+
+Measure 456:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 457:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 458:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -15-
+E |22-  -
+
+Measure 459:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 460:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 461:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 462:
+E |  - 8-
+A |10-  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 463:
+E |  -  -  - 8-
+A |  -  -10-  -
+D |  -12-  -  -
+G |  -  -  -  -
+B |  -  -  -  -
+E |22-  -  -  -
+
+Measure 464:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 465:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -  -  -
+G |  -  -12-  -
+B |  -12-  -  -
+E |19-  -  -  -
+
+Measure 466:
+E |  -  - 8-
+A |  -10-  -
+D |12-  -  -
+G |  -  -  -
+B |  -  -  -
+E |  -  -  -
+
+Measure 467:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |15-  -
+
+Measure 468:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 469:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 470:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 471:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 472:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 473:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 474:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 475:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 476:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 477:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 478:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 479:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -14-  -
+G |  -  -  -  -
+B |  -12-  -  -
+E |12-  -  -  -
+
+Measure 480:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 481:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 482:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 483:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 484:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 485:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -12-
+B |13-  -
+E |  -  -
+
+Measure 486:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 487:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 488:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 489:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 490:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -14-  -
+B |12-  -  -
+E |  -  -  -
+
+Measure 491:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 492:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 493:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 494:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 495:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 496:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 497:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 498:
+E |  -12-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 499:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 501:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 502:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 503:
+E |10-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 504:
+E |  -  -  - 8-
+A |  -  -15-  -
+D |  -12-  -  -
+G |  -  -  -  -
+B |  -  -  -  -
+E |10-  -  -  -
+
+Measure 505:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 506:
+E |  -  - 8-
+A |  -  -  -
+D |  -10-  -
+G |  -  -  -
+B |  -  -  -
+E |10-  -  -
+
+Measure 507:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 508:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |10-  -
+
+Measure 509:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 510:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 511:
+E |  -  -
+A |  -  -
+D |  -12-
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 512:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 513:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 514:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 515:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 516:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 517:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -12-
+B |12-  -
+E |  -  -
+
+Measure 518:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 519:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 520:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 521:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 522:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 523:
+E |  - 8-
+A |  -  -
+D |12-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 524:
+E |  -  -
+A |  -  -
+D |  -14-
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 525:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 526:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 527:
+E |  -
+A |  -
+D |14-
+G |  -
+B |  -
+E |  -
+
+Measure 528:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 529:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 530:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |12-  -
+
+Measure 531:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 532:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 533:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -14-  -
+G |  -  -  -  -
+B |  -13-  -  -
+E |12-  -  -  -
+
+Measure 534:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 535:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 536:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 537:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -14-  -
+G |14-  -  -  -
+B |  - 8-  -  -
+E |  -  -  -  -
+
+Measure 538:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 539:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 540:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 541:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -14-
+B |  -  -
+E |12-  -
+
+Measure 542:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 543:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 544:
+E |  -
+A |  -
+D |10-
+G |  -
+B |  -
+E |  -
+
+Measure 545:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 546:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 547:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 548:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 549:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 550:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 551:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 552:
+E |  -
+A |  -
+D |  -
+G |  -
+B |13-
+E |  -
+
+Measure 553:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |12-  -
+B |  -  -
+E |  -  -
+
+Measure 554:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 555:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -  -
+E |10-  -
+
+Measure 556:
+E |  -  -  - 8-
+A |  -  -  -  -
+D |  -  -12-  -
+G |  -  -  -  -
+B |  -15-  -  -
+E |22-  -  -  -
+
+Measure 557:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |14-  -
+B |  -  -
+E |  -  -
+
+Measure 558:
+E |  -  - 8-
+A |  -  -  -
+D |  -10-  -
+G |  -  -  -
+B |  -  -  -
+E |10-  -  -
+
+Measure 559:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -  -  -
+B |  -15-  -
+E |15-  -  -
+
+Measure 560:
+E |  - 8-
+A |  -  -
+D |10-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 561:
+E |  -
+A |  -
+D |  -
+G |12-
+B |  -
+E |  -
+
+Measure 562:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 563:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 564:
+E |  -  - 8-
+A |  -  -  -
+D |  -  -  -
+G |  -12-  -
+B |  -  -  -
+E |15-  -  -
+
+Measure 565:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 566:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 567:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 568:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 569:
+E |  -
+A |  -
+D |12-
+G |  -
+B |  -
+E |  -
+
+Measure 570:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 571:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 572:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -14-
+B |12-  -
+E |  -  -
+
+Measure 573:
+E | 3-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 574:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 575:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 576:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 577:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 578:
+E |  - 8-
+A |  -  -
+D |  -  -
+G |  -  -
+B |13-  -
+E |  -  -
+
+Measure 579:
+E |  -  - 8-
+A |  -  -  -
+D |  -12-  -
+G |  -  -  -
+B |  -  -  -
+E |17-  -  -
+
+Measure 580:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 581:
+E |  -
+A |  -
+D |13-
+G |  -
+B |  -
+E |  -
+
+Measure 582:
+E |  - 8-
+A |  -  -
+D |14-  -
+G |  -  -
+B |  -  -
+E |  -  -
+
+Measure 583:
+E |  -
+A |  -
+D |  -
+G |  -
+B |12-
+E |  -
+
+Measure 584:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -17-
+E |19-  -
+
+Measure 585:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 586:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 587:
+E |12-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 589:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 590:
+E |12-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 591:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 592:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -14-
+B |12-  -
+E |  -  -
+
+Measure 593:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 594:
+E |  -  -  -
+A |  -  -  -
+D |  -  -14-
+G |  -14-  -
+B |  -  -  -
+E |10-  -  -
+
+Measure 595:
+E |  -  -
+A |  -10-
+D |  -  -
+G |  -  -
+B |12-  -
+E |  -  -
+
+Measure 597:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 598:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |10-
+
+Measure 599:
+E |  -  -
+A |  -  -
+D |  -  -
+G |  -  -
+B |  -15-
+E |12-  -
+
+Measure 600:
+E |  -
+A |10-
+D |  -
+G |  -
+B |  -
+E |  -
+
+Measure 601:
+E |  -
+A |  -
+D |  -
+G |  -
+B |  -
+E |12-
+
+Measure 602:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 603:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 605:
+E |  -
+A |  -
+D |  -
+G |14-
+B |  -
+E |  -
+
+Measure 606:
+E | 8-
+A |  -
+D |  -
+G |  -
+B |  -
+E |  -
