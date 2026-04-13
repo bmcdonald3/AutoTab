@@ -73,24 +73,29 @@ except Exception as e:
 def download_audio(url: str, temp_dir: Path) -> Path:
     """Download audio from URL using yt-dlp."""
     print(f"[1/4] Downloading audio from URL...")
-    output_template = str(temp_dir / "%(title)s.%(ext)s")
     
+    # Use a fixed name for the current download to avoid glob confusion
+    timestamp_name = "current_download"
+    output_path = temp_dir / f"{timestamp_name}.mp3"
+    
+    # Remove existing 'current_download.mp3' if it exists from a previous failed run
+    if output_path.exists():
+        output_path.unlink()
+
     try:
         subprocess.run([
             "yt-dlp",
-            "-x",  # Extract audio
+            "-x",
             "--audio-format", "mp3",
-            "--no-playlist",  # Download single video only
-            "--progress",  # Show progress bar
-            "-o", output_template,
+            "--no-playlist",
+            "-o", str(temp_dir / f"{timestamp_name}.%(ext)s"), # Force the filename
             url
         ], check=True, capture_output=True)
         
-        # Find the downloaded file
-        downloaded_files = list(temp_dir.glob("*.mp3"))
-        if not downloaded_files:
+        if not output_path.exists():
             raise FileNotFoundError("No MP3 file downloaded")
-        return downloaded_files[-1]  # Return most recent
+            
+        return output_path
     except subprocess.CalledProcessError as e:
         print(f"Download failed: {e.stderr.decode()}")
         sys.exit(1)
