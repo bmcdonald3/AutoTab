@@ -70,7 +70,6 @@ def transcribe_to_midi(guitar_stem: Path, temp_dir: Path) -> Path:
         
         model = Model(build_icassp_2022_model_path(FilenameSuffix.onnx))
         
-        # Updated with all required positional arguments for newer basic-pitch versions
         predict_and_save(
             [Path(guitar_stem)],
             Path(temp_dir),
@@ -136,7 +135,8 @@ def convert_to_tab(midi_file: Path, output_name: str, tuning: str) -> Path:
                 for s_idx in range(6):
                     line = f"{names[s_idx]}|"
                     for c in chunk:
-                        line += f"-{c[s_idx]:- <9}"
+                        # Fixed formatting specifier: dash as fill character, left aligned, width 9
+                        line += f"-{c[s_idx]:-<9}"
                     f.write(line + "|\n")
                 f.write("\n")
         return output_path
