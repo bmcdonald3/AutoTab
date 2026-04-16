@@ -246,117 +246,112 @@ def transcribe_to_midi(guitar_stem: Path, temp_dir: Path) -> Path:
 
 
 def convert_to_tab(midi_file: Path, output_dir: Path, tuning: str) -> Path:
-    """Convert MIDI to guitar tab using custom simple tab generator."""
-    print(f"[4/4] Converting to guitar tab...")
+    """Convert MIDI directly to continuous guitar tab format."""
+    print(f"[4/4] Generating continuous guitar tab...")
     
-    output_tab = output_dir / f"{midi_file.stem}.txt"
+    output_tab = output_dir / f"{midi_file.stem}_tab.txt"
     
     try:
         import pretty_midi
         
-        # Load MIDI file
         midi_data = pretty_midi.PrettyMIDI(str(midi_file))
         
-        # Standard tuning: E2(82.41), A2(110.00), D3(146.83), G3(196.00), B3(246.94), E4(329.63)
-        # Open string notes (MIDI numbers): E4=64, B3=59, G3=55, D3=50, A2=45, E2=40
+        # Standard tuning: E2(40), A2(45), D3(50), G3(55), B3(59), E4(64)
         tuning_map = {
-            'standard': [40, 45, 50, 55, 59, 64],  # E2, A2, D3, G3, B3, E4
-            'drop_d': [38, 45, 50, 55, 59, 64],   # D2, A2, D3, G3, B3, E4
-            'd_standard': [38, 43, 48, 53, 57, 62],  # D2, G2, C3, F3, A3, D4
+            'standard': [40, 45, 50, 55, 59, 64],
+            'drop_d': [38, 45, 50, 55, 59, 64],
+            'd_standard': [38, 43, 48, 53, 57, 62],
         }
         
         strings = tuning_map.get(tuning, tuning_map['standard'])
-        string_names = ['E', 'A', 'D', 'G', 'B', 'E'] if tuning == 'standard' else [f'S{i+1}' for i in range(6)]
         
-        # Collect all notes from all instruments
+        # Collect and sort all notes
         all_notes = []
         for instrument in midi_data.instruments:
             for note in instrument.notes:
                 all_notes.append({
                     'pitch': note.pitch,
                     'start': note.start,
-                    'end': note.end,
-                    'velocity': note.velocity
                 })
         
-        # Sort by start time
         all_notes.sort(key=lambda x: x['start'])
         
-        # Group notes by time (chords)
-        chords = []
+        # Group notes into temporal columns (chords/events)
+        columns_data = []
         current_time = None
         current_chord = []
         
         for note in all_notes:
-            if current_time is None or abs(note['start'] - current_time) < 0.05:  # Within 50ms
+            if current_time is None or abs(note['start'] - current_time) < 0.05:
                 if current_time is None:
                     current_time = note['start']
                 current_chord.append(note)
             else:
                 if current_chord:
-                    chords.append(current_chord)
+                    columns_data.append(current_chord)
                 current_chord = [note]
                 current_time = note['start']
         
         if current_chord:
-            chords.append(current_chord)
+            columns_data.append(current_chord)
         
-        # Generate tab
-        tab_lines = ['Guitar Tab (AutoTab)', 'Generated from MIDI', '=' * 40, '']
+        # Assign frets and strings
+        formatted_columns = []
         
-        for i, chord in enumerate(chords):
-            # For each note in chord, find best string
+        for chord in columns_data:
             assignments = []
             used_strings = set()
             
-            for note in sorted(chord, key=lambda x: -x['pitch']):  # Highest pitch first
+            for note in sorted(chord, key=lambda x: -x['pitch']):
                 best_string = None
                 best_fret = None
                 min_distance = float('inf')
                 
-                # Find the string that gives the closest fret to the note
                 for string_idx, open_note in enumerate(strings):
                     if string_idx in used_strings:
                         continue
                     fret = note['pitch'] - open_note
-                    if 0 <= fret <= 22:  # Fret range
-                        distance = abs(fret - 12)  # Prefer middle of fretboard
+                    if 0 <= fret <= 22:
+                        distance = abs(fret - 12)
                         if distance < min_distance:
                             min_distance = distance
                             best_string = string_idx
                             best_fret = fret
                 
                 if best_string is not None:
-                    assignments.append((best_string, best_fret, note))
+                    assignments.append((best_string, best_fret))
                     used_strings.add(best_string)
-                else:
-                    # Could not assign to a string, skip note
-                    pass
             
-            # Build tab line for this chord
             if assignments:
-                tab_lines.append(f'Measure {i+1}:')
-                for string_idx in range(6):
-                    line = f"{string_names[string_idx]} |"
-                    for string_num, fret, note in assignments:
-                        if string_num == string_idx:
-                            line += f"{fret:2d}-"
-                        else:
-                            line += "  -"
-                    tab_lines.append(line)
-                tab_lines.append('')
+                col = ["-"] * 6
+                for string_idx, fret in assignments:
+                    # Map Midi order (0=Low E) to Visual order (5=Low E)
+                    visual_idx = 5 - string_idx
+                    col[visual_idx] = str(fret)
+                formatted_columns.append(col)
         
-        # Write tab file
+        # Write output formatting
+        tab_lines = []
+        string_names = ['e', 'B', 'G', 'D', 'A', 'E'] if tuning == 'standard' else [f'S{i+1}' for i in reversed(range(6))]
+        step = 10 # Number of vertical events per line block
+        
+        for i in range(0, len(formatted_columns), step):
+            chunk = formatted_columns[i : i + step]
+            for s_idx in range(6):
+                line = f"{string_names[s_idx]}|"
+                for col in chunk:
+                    val = col[s_idx]
+                    if val == "-":
+                        line += "----------"
+                    else:
+                        line += f"-{val:-<9}"
+                line += "|"
+                tab_lines.append(line)
+            tab_lines.append('')
+        
         output_tab.write_text('\n'.join(tab_lines))
-        
         return output_tab
         
-    except ImportError as e:
-        print(f"Tuttut import failed: {e}")
-        print("Falling back to simple tab generation...")
-        # Create a simple placeholder tab
-        output_tab.write_text("Tab generation failed - missing dependencies")
-        return output_tab
     except Exception as e:
         print(f"Tab conversion failed: {e}")
         sys.exit(1)
