@@ -22,6 +22,7 @@ coverage.xml
 # Project specific
 temp/
 output/
+separated/
 *.mid
 *.wav
 *.mp3
