@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-AutoTab: Automatically convert MP3 files to guitar tabs using AI.
-Pipeline: Download → Isolate (Demucs) → Transcribe (Basic Pitch) → Optimize (Tuttut)
-"""
-
 import argparse
 import os
 import shutil
@@ -12,436 +7,162 @@ import sys
 from pathlib import Path
 from shutil import copy2
 
-
 def setup_directories():
-    """Create temp and output directories if they don't exist."""
     temp_dir = Path("temp")
     output_dir = Path("output")
     temp_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
-    # Ensure Demucs cache directory exists with proper permissions
     cache_dir = Path.home() / ".cache" / "demucs"
     cache_dir.mkdir(parents=True, exist_ok=True)
-    # Set permissions to 0o755 (read/write/execute for owner, read/execute for others)
     os.chmod(cache_dir, 0o755)
     return temp_dir, output_dir
 
-
 def check_dependencies():
-    """Verify required CLI tools are available."""
     missing = []
-    for cmd in ["demucs", "yt-dlp"]:
+    for cmd in ["demucs", "yt-dlp", "ffmpeg"]:
         try:
-            subprocess.run([cmd, "--version"], capture_output=True, check=False)
+            subprocess.run([cmd, "-version" if cmd == "ffmpeg" else "--version"], capture_output=True, check=False)
         except FileNotFoundError:
             missing.append(cmd)
-    
     if missing:
         print(f"Error: Missing dependencies: {', '.join(missing)}")
-        print("Install with: pip install -r requirements.txt")
         sys.exit(1)
 
-
-def validate_demucs_model():
-    """Check if the htdemucs model is available."""
-    print("Validating Demucs model...")
-    try:
-        # Use Python to check if model can be loaded
-        check_script = """
-import demucs.pretrained
-try:
-    demucs.pretrained.get_model('htdemucs')
-    print("Model available")
-except Exception as e:
-    print(f"Error: {e}")
-    exit(1)
-"""
-        result = subprocess.run(
-            [sys.executable, "-c", check_script],
-            capture_output=True,
-            text=True
-        )
-        if result.returncode != 0:
-            print(f"Demucs model validation failed: {result.stderr}")
-            print("The model will be downloaded automatically on first use.")
-        else:
-            print("  ✓ Demucs model validated")
-    except Exception as e:
-        print(f"Warning: Could not validate model: {e}")
-
-
 def download_audio(url: str, temp_dir: Path) -> Path:
-    """Download audio from URL using yt-dlp."""
-    print(f"[1/4] Downloading audio from URL...")
-    
-    # Use a fixed name for the current download to avoid glob confusion
-    timestamp_name = "current_download"
-    output_path = temp_dir / f"{timestamp_name}.mp3"
-    
-    # Remove existing 'current_download.mp3' if it exists from a previous failed run
+    print(f"[1/4] Downloading audio...")
+    output_path = temp_dir / "current_download.mp3"
     if output_path.exists():
         output_path.unlink()
-
     try:
         subprocess.run([
-            "yt-dlp",
-            "-x",
-            "--audio-format", "mp3",
-            "--no-playlist",
-            "-o", str(temp_dir / f"{timestamp_name}.%(ext)s"), # Force the filename
-            url
+            "yt-dlp", "-x", "--audio-format", "mp3", "--no-playlist",
+            "-o", str(temp_dir / "current_download.%(ext)s"), url
         ], check=True, capture_output=True)
-        
-        if not output_path.exists():
-            raise FileNotFoundError("No MP3 file downloaded")
-            
         return output_path
     except subprocess.CalledProcessError as e:
         print(f"Download failed: {e.stderr.decode()}")
         sys.exit(1)
 
-
-def get_input_file(args) -> Path:
-    """Determine input file path from URL or local path."""
-    temp_dir, _ = setup_directories()
-    
-    if args.url:
-        return download_audio(args.url, temp_dir)
-    elif args.input:
-        input_path = Path(args.input)
-        if not input_path.exists():
-            print(f"Error: Input file not found: {args.input}")
-            sys.exit(1)
-        # Copy to temp for consistent processing
-        dest = temp_dir / input_path.name
-        copy2(input_path, dest)
-        return dest
-    else:
-        print("Error: Must provide either --url or --input")
-        sys.exit(1)
-
-
 def isolate_guitar(input_file: Path, temp_dir: Path) -> Path:
-    """Run Demucs v4 to isolate guitar stem using htdemucs (4-stem) with fallback to 'other'."""
-    print(f"[2/4] Isolating guitar stem with Demucs...")
-    
+    print(f"[2/4] Isolating guitar stem...")
     try:
-        # Demucs outputs to a 'separated' directory by default
-        result = subprocess.run([
-            "demucs",
-            "-n", "htdemucs",  # Use 4-stem model (most stable)
-            "-d", "cpu",
-            "--verbose",
-            str(input_file)
-        ], check=True, capture_output=True, text=True)
-        
-        # Find the guitar stem
-        # For htdemucs (4-stem), guitar is typically in 'other' stem
-        track_name = input_file.stem
-        separated_dir = Path("separated") / "htdemucs" / track_name
-        
-        # Check for guitar.wav first (if using 6-stem model)
+        subprocess.run(["demucs", "-n", "htdemucs", "-d", "cpu", str(input_file)], check=True, capture_output=True)
+        separated_dir = Path("separated") / "htdemucs" / input_file.stem
         guitar_stem = separated_dir / "guitar.wav"
         if not guitar_stem.exists():
-            # Fallback to 'other' stem for 4-stem model
             guitar_stem = separated_dir / "other.wav"
-        
-        if not guitar_stem.exists():
-            # Try alternative: list all stems and pick the most likely
-            if separated_dir.exists():
-                stems = list(separated_dir.glob("*.wav"))
-                if stems:
-                    # Prefer 'guitar' if available, otherwise 'other'
-                    for stem in stems:
-                        if "guitar" in stem.name.lower():
-                            guitar_stem = stem
-                            break
-                    if not guitar_stem.exists():
-                        # Use 'other' as last resort
-                        for stem in stems:
-                            if "other" in stem.name.lower():
-                                guitar_stem = stem
-                                break
-                    # If still not found, use first available
-                    if not guitar_stem.exists() and stems:
-                        guitar_stem = stems[0]
-        
-        if not guitar_stem.exists():
-            raise FileNotFoundError("Guitar stem not found after Demucs separation")
-        
-        print(f"  Using stem: {guitar_stem.name}")
-        
-        # Copy to temp for next steps
         dest = temp_dir / "guitar_stem.wav"
         copy2(guitar_stem, dest)
         return dest
-    except subprocess.CalledProcessError as e:
-        print(f"Demucs isolation failed: {e.stderr}")
+    except Exception as e:
+        print(f"Demucs isolation failed: {e}")
         sys.exit(1)
 
-
 def transcribe_to_midi(guitar_stem: Path, temp_dir: Path) -> Path:
-    """Run Basic Pitch to transcribe guitar stem to MIDI using Python API."""
-    print(f"[3/4] Transcribing to MIDI with Basic Pitch...")
-    
+    print(f"[3/4] Transcribing to MIDI...")
     try:
-        # Patch scipy.signal.gaussian for compatibility with scipy >= 1.14
         import scipy.signal
         if not hasattr(scipy.signal, 'gaussian'):
             from scipy.signal.windows import gaussian
             scipy.signal.gaussian = gaussian
-        
-        from basic_pitch.inference import predict_and_save, verify_output_dir, verify_input_path
+        from basic_pitch.inference import predict_and_save
         from basic_pitch.predict import Model, build_icassp_2022_model_path, FilenameSuffix
-        import pathlib
         
-        # Force ONNX backend to avoid TensorFlow compatibility issues
-        onnx_model_path = build_icassp_2022_model_path(FilenameSuffix.onnx)
-        model = Model(onnx_model_path)
+        model = Model(build_icassp_2022_model_path(FilenameSuffix.onnx))
         
-        # Prepare output directory
-        output_dir = pathlib.Path(str(temp_dir))
-        verify_output_dir(output_dir)
-        
-        # Process the audio file
-        audio_path_list = [pathlib.Path(str(guitar_stem))]
-        for audio_path in audio_path_list:
-            verify_input_path(audio_path)
-        
-        # Run prediction and save
+        # Updated with all required positional arguments for newer basic-pitch versions
         predict_and_save(
-            audio_path_list,
-            output_dir,
-            save_midi=True,
-            sonify_midi=False,
-            save_model_outputs=False,
-            save_notes=False,
-            model_or_model_path=model,
-            onset_threshold=0.5,
-            frame_threshold=0.3,
-            minimum_note_length=127.70,
-            minimum_frequency=None,
-            maximum_frequency=None,
-            multiple_pitch_bends=False,
-            melodia_trick=True,
-            debug_file=None,
-            sonification_samplerate=44100,
-            midi_tempo=120,
+            [Path(guitar_stem)],
+            Path(temp_dir),
+            True,  # save_midi
+            False, # sonify_midi
+            False, # save_model_outputs
+            False, # save_notes
+            model_or_model_path=model
         )
-        
-        # The MIDI file is saved with _basic_pitch suffix
-        output_midi = temp_dir / f"{guitar_stem.stem}_basic_pitch.mid"
-        
-        if not output_midi.exists():
-            raise FileNotFoundError("MIDI file not generated by Basic Pitch")
-        
-        return output_midi
-    except ImportError as e:
-        print(f"Basic Pitch import failed: {e}")
-        print("Make sure basic-pitch is installed correctly")
-        sys.exit(1)
+        return temp_dir / f"{guitar_stem.stem}_basic_pitch.mid"
     except Exception as e:
-        print(f"Basic Pitch transcription failed: {e}")
+        print(f"Transcription failed: {e}")
         sys.exit(1)
 
-
-def convert_to_tab(midi_file: Path, output_dir: Path, tuning: str) -> Path:
-    """Convert MIDI directly to continuous guitar tab format."""
-    print(f"[4/4] Generating continuous guitar tab...")
-    
-    output_tab = output_dir / f"{midi_file.stem}_tab.txt"
-    
+def convert_to_tab(midi_file: Path, output_name: str, tuning: str) -> Path:
+    print(f"[4/4] Generating continuous tab...")
     try:
         import pretty_midi
-        
         midi_data = pretty_midi.PrettyMIDI(str(midi_file))
-        
-        # Standard tuning: E2(40), A2(45), D3(50), G3(55), B3(59), E4(64)
         tuning_map = {
             'standard': [40, 45, 50, 55, 59, 64],
+            'eb_standard': [39, 44, 49, 54, 58, 63],
             'drop_d': [38, 45, 50, 55, 59, 64],
-            'd_standard': [38, 43, 48, 53, 57, 62],
         }
-        
         strings = tuning_map.get(tuning, tuning_map['standard'])
-        
-        # Collect and sort all notes
         all_notes = []
-        for instrument in midi_data.instruments:
-            for note in instrument.notes:
-                all_notes.append({
-                    'pitch': note.pitch,
-                    'start': note.start,
-                })
-        
+        for inst in midi_data.instruments:
+            for note in inst.notes:
+                all_notes.append({'pitch': note.pitch, 'start': note.start})
         all_notes.sort(key=lambda x: x['start'])
-        
-        # Group notes into temporal columns (chords/events)
-        columns_data = []
-        current_time = None
-        current_chord = []
-        
-        for note in all_notes:
-            if current_time is None or abs(note['start'] - current_time) < 0.05:
-                if current_time is None:
-                    current_time = note['start']
-                current_chord.append(note)
+
+        columns = []
+        curr_time, curr_chord = None, []
+        for n in all_notes:
+            if curr_time is None or abs(n['start'] - curr_time) < 0.05:
+                if curr_time is None: curr_time = n['start']
+                curr_chord.append(n)
             else:
-                if current_chord:
-                    columns_data.append(current_chord)
-                current_chord = [note]
-                current_time = note['start']
-        
-        if current_chord:
-            columns_data.append(current_chord)
-        
-        # Assign frets and strings
-        formatted_columns = []
-        
-        for chord in columns_data:
-            assignments = []
+                columns.append(curr_chord)
+                curr_chord, curr_time = [n], n['start']
+        if curr_chord: columns.append(curr_chord)
+
+        formatted = []
+        for chord in columns:
             used_strings = set()
-            
-            for note in sorted(chord, key=lambda x: -x['pitch']):
-                best_string = None
-                best_fret = None
-                min_distance = float('inf')
-                
-                for string_idx, open_note in enumerate(strings):
-                    if string_idx in used_strings:
-                        continue
-                    fret = note['pitch'] - open_note
+            col = ["-"] * 6
+            for n in sorted(chord, key=lambda x: -x['pitch']):
+                for s_idx, open_note in enumerate(strings):
+                    if s_idx in used_strings: continue
+                    fret = n['pitch'] - open_note
                     if 0 <= fret <= 22:
-                        distance = abs(fret - 12)
-                        if distance < min_distance:
-                            min_distance = distance
-                            best_string = string_idx
-                            best_fret = fret
-                
-                if best_string is not None:
-                    assignments.append((best_string, best_fret))
-                    used_strings.add(best_string)
-            
-            if assignments:
-                col = ["-"] * 6
-                for string_idx, fret in assignments:
-                    # Map Midi order (0=Low E) to Visual order (5=Low E)
-                    visual_idx = 5 - string_idx
-                    col[visual_idx] = str(fret)
-                formatted_columns.append(col)
-        
-        # Write output formatting
-        tab_lines = []
-        string_names = ['e', 'B', 'G', 'D', 'A', 'E'] if tuning == 'standard' else [f'S{i+1}' for i in reversed(range(6))]
-        step = 10 # Number of vertical events per line block
-        
-        for i in range(0, len(formatted_columns), step):
-            chunk = formatted_columns[i : i + step]
-            for s_idx in range(6):
-                line = f"{string_names[s_idx]}|"
-                for col in chunk:
-                    val = col[s_idx]
-                    if val == "-":
-                        line += "----------"
-                    else:
-                        line += f"-{val:-<9}"
-                line += "|"
-                tab_lines.append(line)
-            tab_lines.append('')
-        
-        output_tab.write_text('\n'.join(tab_lines))
-        return output_tab
-        
+                        col[5 - s_idx] = str(fret)
+                        used_strings.add(s_idx)
+                        break
+            formatted.append(col)
+
+        output_path = Path(output_name)
+        with open(output_path, 'w') as f:
+            step = 10
+            names = ['e','B','G','D','A','E']
+            for i in range(0, len(formatted), step):
+                chunk = formatted[i : i + step]
+                for s_idx in range(6):
+                    line = f"{names[s_idx]}|"
+                    for c in chunk:
+                        line += f"-{c[s_idx]:- <9}"
+                    f.write(line + "|\n")
+                f.write("\n")
+        return output_path
     except Exception as e:
         print(f"Tab conversion failed: {e}")
         sys.exit(1)
 
-
-def cleanup_temp_files(temp_dir: Path):
-    """Remove large intermediate files from temp directory."""
-    print("Cleaning up temporary files...")
-    # Delete .wav and .mid files from temp
-    for ext in ["*.wav", "*.mid"]:
-        for file in temp_dir.glob(ext):
-            try:
-                file.unlink()
-            except Exception as e:
-                print(f"Warning: Could not delete {file}: {e}")
-    
-    # Also clean up separated directory if it exists (from Demucs)
-    separated_dir = Path("separated")
-    if separated_dir.exists():
-        try:
-            shutil.rmtree(separated_dir)
-        except Exception as e:
-            print(f"Warning: Could not delete separated directory: {e}")
-
-
 def main():
-    parser = argparse.ArgumentParser(
-        description="AutoTab: Convert MP3 to guitar tab using AI"
-    )
-    parser.add_argument(
-        "--url",
-        help="URL of audio to download (YouTube, etc.)"
-    )
-    parser.add_argument(
-        "--input",
-        help="Local MP3 file path"
-    )
-    parser.add_argument(
-        "--tuning",
-        default="standard",
-        help="Guitar tuning (e.g., standard, drop_d, d_standard, etc.)"
-    )
-    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--url")
+    parser.add_argument("--input")
+    parser.add_argument("--tuning", default="standard")
+    parser.add_argument("-o", "--output", help="Output filename")
     args = parser.parse_args()
-    
-    # Validate arguments
-    if not args.url and not args.input:
-        parser.error("Must provide either --url or --input")
-    
-    print("=" * 50)
-    print("AutoTab - AI-Powered Guitar Tab Transcription")
-    print("=" * 50)
-    
-    # Check dependencies
+
+    temp_dir, _ = setup_directories()
     check_dependencies()
     
-    # Setup directories
-    temp_dir, output_dir = setup_directories()
+    input_file = download_audio(args.url, temp_dir) if args.url else Path(args.input)
+    guitar_stem = isolate_guitar(input_file, temp_dir)
+    midi_file = transcribe_to_midi(guitar_stem, temp_dir)
     
-    # Validate Demucs model
-    validate_demucs_model()
+    out_name = args.output if args.output else f"{input_file.stem}_tab.txt"
+    tab_file = convert_to_tab(midi_file, out_name, args.tuning)
     
-    try:
-        # Step 1: Get input file
-        input_file = get_input_file(args)
-        print(f"  Input: {input_file.name}")
-        
-        # Step 2: Isolate guitar
-        guitar_stem = isolate_guitar(input_file, temp_dir)
-        print(f"  Guitar stem: {guitar_stem.name}")
-        
-        # Step 3: Transcribe to MIDI
-        midi_file = transcribe_to_midi(guitar_stem, temp_dir)
-        print(f"  MIDI: {midi_file.name}")
-        
-        # Step 4: Convert to tab
-        tab_file = convert_to_tab(midi_file, Path("."), args.tuning)
-        print(f"  Tab: {tab_file}")
-        
-        # Cleanup intermediate files
-        cleanup_temp_files(temp_dir)
-        
-        print("=" * 50)
-        print(f"✓ Tab saved to: {tab_file}")
-        print("=" * 50)
-        
-    except Exception as e:
-        print(f"Error: {e}")
-        sys.exit(1)
-
+    print(f"Processed into {tab_file}")
 
 if __name__ == "__main__":
     main()
